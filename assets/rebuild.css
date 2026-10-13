@@ -1,0 +1,47 @@
+/* Learning Roots Royal Academy — rebuild additions
+   New components: timeline, pills, enquiry forms, fee & results tables, notices */
+
+/* ---------- notice / callout ---------- */
+.notice { background:#fff; border:1px solid var(--line); border-radius:18px; padding:18px 20px; color:var(--ink); font-size:14px; }
+.notice strong { color:var(--navy); }
+
+/* ---------- timeline ---------- */
+.timeline { display:grid; gap:14px; margin-top:22px; }
+.tl-item { display:grid; grid-template-columns:150px 1fr; gap:20px; background:#fff; border:1px solid var(--line); border-radius:18px; padding:18px 20px; }
+.tl-item .tl-time { font-weight:900; color:var(--gold); font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.tl-item h4 { margin:0 0 4px; color:var(--navy); font-family:Georgia,serif; font-size:19px; font-weight:500; }
+.tl-item p { margin:0; font-size:14px; }
+@media (max-width:640px){ .tl-item { grid-template-columns:1fr; gap:6px; } }
+
+/* ---------- pill ---------- */
+.pill { display:inline-block; font-size:11px; font-weight:900; text-transform:uppercase; letter-spacing:.08em; color:var(--navy); background:#eef0fa; border-radius:999px; padding:4px 11px; margin-bottom:10px; }
+
+/* ---------- enquiry forms ---------- */
+.enquiry-form { display:grid; gap:12px; margin-top:16px; }
+.enquiry-form .form-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.enquiry-form input, .enquiry-form textarea {
+  width:100%; padding:12px 14px; border:1px solid var(--line); border-radius:12px;
+  font-family:inherit; font-size:14px; color:var(--ink); background:#fff;
+}
+.enquiry-form input:focus, .enquiry-form textarea:focus { outline:2px solid var(--gold); border-color:var(--gold); }
+.enquiry-form textarea { resize:vertical; }
+.enquiry-form .btn { justify-self:start; }
+.form-note { font-size:13px; color:var(--muted); margin:4px 0 0; }
+@media (max-width:560px){ .enquiry-form .form-row { grid-template-columns:1fr; } }
+
+/* ---------- fee & results tables ---------- */
+.fee-table td:first-child, .results-table td:first-child { color:var(--navy); }
+.fee-table tbody tr:hover, .results-table tbody tr:hover { background:#fafbff; }
+.res-figure { font-weight:900; color:var(--navy); font-size:15px; white-space:nowrap; }
+
+/* ---------- value cards (reuse .value) ---------- */
+.value b { font-size:19px; }
+
+/* ---------- small polish for new pages ---------- */
+.page-hero p { max-width:760px; }
+.section .container > .kicker + h2 { margin-top:6px; }
+
+/* ---------- footer link columns: stack links (fixes inline run-together) ---------- */
+.footer-grid > div > a { display:block; padding:3px 0; }
+.footer-grid > div > h3 { margin-bottom:10px; }
+.footer-grid .social a { display:grid; padding:0; }
