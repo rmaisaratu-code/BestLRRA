@@ -1,0 +1,47 @@
+{
+  "id": "/",
+  "name": "Learning Roots Royal Academy",
+  "short_name": "Learning Roots",
+  "description": "Learning Roots Royal Academy, Kofare, Jimeta, Yola \u2014 Nursery, Primary and Secondary education.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "en-NG",
+  "background_color": "#ffffff",
+  "theme_color": "#111b52",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Admissions",
+      "url": "/admission-process"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    },
+    {
+      "name": "School Portal",
+      "url": "/portal"
+    }
+  ]
+}

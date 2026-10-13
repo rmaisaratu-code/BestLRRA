@@ -1,0 +1,140 @@
+<!doctype html><html lang="en-NG" data-rev="2"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#111b52"><meta name="description" content="Secure school portal for Learning Roots Royal Academy staff and parents."><title>Teacher Dashboard | Learning Roots Royal Academy</title><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="assets/enhance.css"><link rel="stylesheet" href="assets/rebuild.css?v=2"><meta property="og:type" content="website"><meta property="og:site_name" content="Learning Roots Royal Academy"><meta property="og:locale" content="en_NG"><meta property="og:title" content="Teacher Dashboard | Learning Roots Royal Academy"><meta property="og:description" content="Secure school portal for Learning Roots Royal Academy staff and parents."><meta property="og:url" content="https://learningrootsroyalacademy.com/teacher-dashboard"><meta property="og:image" content="https://learningrootsroyalacademy.com/assets/img/og-share.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="robots" content="noindex,nofollow"></head><body><div class="top"><div class="container"><span>Premier private education, open nationwide • Nursery, Primary & Secondary</span><span>+234 816 867 3193 • contact@learningrootsroyalacademy.com</span></div></div><header class="header"><div class="container nav"><a class="brand" href="index.html"><img src="assets/img/img_390e1c584a63.png" alt="Learning Roots Royal Academy logo"><div><strong>Learning Roots<br>Royal Academy</strong><small>Nurturing the Future</small></div></a><nav class="menu"><a href="index.html">Home</a><details><summary>About ▾</summary><div class="drop"><a href="about.html">Our Story</a><a href="founder.html">Founder &amp; Chairman</a><a href="values.html">Vision, Mission &amp; Values</a></div></details><details><summary>Our School ▾</summary><div class="drop"><a href="nursery.html">Nursery</a><a href="early-years.html">Early Years</a><a href="primary.html">Primary</a><a href="secondary.html">Secondary</a></div></details><details><summary>Academics ▾</summary><div class="drop"><a href="academics.html">Academic Overview</a><a href="curriculum.html">Curriculum</a><a href="subjects.html">Subjects</a><a href="classes.html">Classes &amp; Divisions</a><a href="results.html">Results &amp; Achievements</a></div></details><details><summary>Admissions ▾</summary><div class="drop"><a href="admissions.html">Why Learning Roots</a><a href="admission-process.html">Admission Process</a><a href="requirements.html">Requirements</a><a href="fees.html">Fees</a><a href="scholarships.html">Scholarships</a><a href="careers.html">Careers</a><a href="faq.html">FAQs</a></div></details><details><summary>Student Life ▾</summary><div class="drop"><a href="student-life.html">Life at Learning Roots</a><a href="clubs.html">Clubs &amp; Societies</a><a href="gallery.html">Gallery</a><a href="media.html">Media Centre</a></div></details><a href="contact.html">Contact</a><a class="portal" href="portal.html">School Portal</a></nav><button class="mobile-toggle" onclick="toggleNav()" aria-label="Open menu">☰</button></div><div class="mobile-nav" id="mobileNav"><a href="index.html">Home</a><details><summary>About</summary><div class="drop"><a href="about.html">Our Story</a><a href="founder.html">Founder &amp; Chairman</a><a href="values.html">Vision, Mission &amp; Values</a></div></details><details><summary>Our School</summary><div class="drop"><a href="nursery.html">Nursery</a><a href="early-years.html">Early Years</a><a href="primary.html">Primary</a><a href="secondary.html">Secondary</a></div></details><details><summary>Academics</summary><div class="drop"><a href="academics.html">Academic Overview</a><a href="curriculum.html">Curriculum</a><a href="subjects.html">Subjects</a><a href="classes.html">Classes &amp; Divisions</a><a href="results.html">Results &amp; Achievements</a></div></details><details><summary>Admissions</summary><div class="drop"><a href="admissions.html">Why Learning Roots</a><a href="admission-process.html">Admission Process</a><a href="requirements.html">Requirements</a><a href="fees.html">Fees</a><a href="scholarships.html">Scholarships</a><a href="careers.html">Careers</a><a href="faq.html">FAQs</a></div></details><details><summary>Student Life</summary><div class="drop"><a href="student-life.html">Life at Learning Roots</a><a href="clubs.html">Clubs &amp; Societies</a><a href="gallery.html">Gallery</a><a href="media.html">Media Centre</a></div></details><a href="contact.html">Contact</a><a href="portal.html">School Portal</a></div></header><section class="page-hero"><div class="container"><div class="crumb">School Portal / Staff & Teachers</div><h1>Your classes, your way.</h1><p>Logged in as <b>Mr. Ibrahim Sule</b> — Mathematics teacher, form teacher of JSS1.</p></div></section><section class="dashboard section"><div class="container">
+<div class="dtabs" data-dtabs>
+<button class="active" data-tab="tab-mystudents">My Students</button>
+<button data-tab="tab-assignments">Assignments</button>
+<button data-tab="tab-scheme">Scheme of Work</button>
+<button data-tab="tab-lessonplans">Lesson Plans</button>
+<button data-tab="tab-timetable">Timetable</button>
+<button data-tab="tab-calendar">Calendar</button>
+</div>
+
+<div class="dpane active" id="tab-mystudents">
+<p style="color:#6b7280;margin-bottom:14px">Students you teach across JSS1 and JSS2 — Mathematics scores are editable below. Payment information is not shown to teaching staff.</p>
+<div id="teacher-student-table"></div>
+</div>
+
+<div class="dpane" id="tab-assignments">
+<div id="teacher-assignments"></div>
+<div class="mini-card">
+<h4>Set a new assignment</h4>
+<div style="display:grid;gap:8px;margin-top:10px">
+<select id="asg-class">JSS1</select>
+<input id="asg-title" type="text" placeholder="Assignment title">
+<input id="asg-question" type="text" placeholder="Assignment question / instructions">
+<button class="btn gold" id="asg-submit" style="justify-self:start">Post assignment</button>
+</div>
+</div>
+</div>
+
+<div class="dpane" id="tab-scheme">
+<div id="teacher-scheme"></div>
+</div>
+
+<div class="dpane" id="tab-lessonplans">
+<div id="teacher-lessonplans"></div>
+</div>
+
+<div class="dpane" id="tab-timetable">
+<div class="notice"><h3>Weekly timetable — Mr. Ibrahim Sule</h3>
+<div class="table-wrap"><table class="table">
+<thead><tr><th>Day</th><th>8:00–8:45</th><th>8:45–9:30</th><th>9:45–10:30</th><th>10:30–11:15</th></tr></thead>
+<tbody>
+<tr><td>Monday</td><td>JSS1 Mathematics</td><td>JSS1 Mathematics</td><td>JSS2 Mathematics</td><td>Free period</td></tr>
+<tr><td>Tuesday</td><td>JSS2 Mathematics</td><td>Free period</td><td>JSS1 Mathematics</td><td>Duty — Assembly</td></tr>
+<tr><td>Wednesday</td><td>JSS1 Mathematics</td><td>JSS2 Mathematics</td><td>JSS2 Mathematics</td><td>Free period</td></tr>
+<tr><td>Thursday</td><td>Free period</td><td>JSS1 Mathematics</td><td>JSS1 Mathematics</td><td>Duty — Library</td></tr>
+<tr><td>Friday</td><td>JSS2 Mathematics</td><td>JSS2 Mathematics</td><td>Free period</td><td>Staff meeting</td></tr>
+</tbody></table></div>
+</div>
+<div class="notice"><h3>Duty status</h3><p>On duty: <b>Monday (Assembly)</b> and <b>Thursday (Library)</b>. Not on duty the rest of the week.</p></div>
+</div>
+
+<div class="dpane" id="tab-calendar">
+<div id="teacher-calendar"></div>
+</div>
+
+</div></section>
+<script src="assets/data.js"></script>
+<script src="assets/dashboard.js"></script>
+<script>
+(function(){
+function E(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  var D = window.SCHOOL_DATA;
+  var ME = D.teachers[0]; // Mr. Ibrahim Sule
+  var myStudents = D.students.filter(function(s){ return ME.classes.indexOf(s.class) > -1; });
+
+  LRRA_renderStudentTable({
+    container: document.getElementById('teacher-student-table'),
+    students: myStudents,
+    showPayment: false,
+    showHouse: true,
+    subjectCols: ME.subjects,
+    editable: true,
+    canComment: true,
+    commentRole: 'Teacher',
+    commentAuthor: ME.name,
+    commentPlaceholder: 'Add a comment about this student...'
+  });
+
+  var asgWrap = document.getElementById('teacher-assignments');
+  var asgClassSel = document.getElementById('asg-class');
+  asgClassSel.innerHTML = ME.classes.map(function(c){return '<option>'+c+'</option>';}).join('');
+
+  function drawAssignments(){
+    var mine = D.assignments.filter(function(a){ return ME.classes.indexOf(a.class) > -1; });
+    asgWrap.innerHTML = mine.map(function(a){
+      return '<div class="mini-card"><h4>' + E(a.title) + '</h4><div class="meta">' + E(a.class) + ' · ' + E(a.subject) + ' · Due ' + a.due + '</div><p>' + a.question + '</p></div>';
+    }).join('') || '<p style="color:#9aa0ab">No assignments set yet.</p>';
+  }
+  drawAssignments();
+
+  document.getElementById('asg-submit').addEventListener('click', function(){
+    var title = document.getElementById('asg-title').value.trim();
+    var question = document.getElementById('asg-question').value.trim();
+    if (!title || !question) return;
+    D.assignments.push({
+      id: 'A' + (D.assignments.length+1),
+      class: asgClassSel.value,
+      subject: ME.subjects[0],
+      title: title, question: question, due: 'TBC'
+    });
+    document.getElementById('asg-title').value = '';
+    document.getElementById('asg-question').value = '';
+    drawAssignments();
+  });
+
+  var schemeWrap = document.getElementById('teacher-scheme');
+  ME.subjects.forEach(function(subj){
+    var weeks = D.schemeOfWork[subj];
+    if (!weeks) return;
+    schemeWrap.innerHTML += '<div class="mini-card"><h4>' + E(subj) + '</h4><ul style="margin:8px 0 0;padding-left:18px;color:#444">' +
+      weeks.map(function(w){ return '<li>' + E(w) + '</li>'; }).join('') + '</ul></div>';
+  });
+  if (!schemeWrap.innerHTML) schemeWrap.innerHTML = '<p style="color:#9aa0ab">Scheme of work for your subject will appear here.</p>';
+
+  var lpWrap = document.getElementById('teacher-lessonplans');
+  D.lessonPlans.filter(function(lp){ return ME.subjects.indexOf(lp.subject) > -1; }).forEach(function(lp){
+    var reviews = lp.review_comments.map(function(r){
+      return '<div class="comment-item"><span class="who">' + E(r.author) + '</span><div>' + E(r.text) + '</div><div style="color:#9aa0ab;font-size:11px">' + E(r.date) + '</div></div>';
+    }).join('');
+    lpWrap.innerHTML += '<div class="mini-card"><h4>' + E(lp.topic) + '</h4><div class="meta">' + E(lp.class) + ' · ' + E(lp.week) + '</div>' +
+      '<p><b>Objectives:</b> ' + E(lp.objectives) + '</p><p><b>Materials:</b> ' + E(lp.materials) + '</p>' +
+      '<p><b>Activities:</b> ' + E(lp.activities) + '</p><p><b>Assessment:</b> ' + E(lp.assessment) + '</p>' +
+      '<div class="comment-panel open" style="margin-top:10px"><b style="font-size:12px;color:var(--navy)">Feedback from Vice Principal</b>' + reviews + '</div></div>';
+  });
+  if (!lpWrap.innerHTML) lpWrap.innerHTML = '<p style="color:#9aa0ab">No lesson plans on file for your subject yet.</p>';
+
+  LRRA_renderCalendar(document.getElementById('teacher-calendar'));
+})();
+</script>
+<footer class="footer"><div class="container footer-grid"><div><img src="assets/img/img_390e1c584a63.png" alt="Learning Roots Royal Academy" style="width:64px;height:64px;object-fit:contain"><h3 style="margin-top:16px">Learning Roots Royal Academy</h3><p>A private school in Kofare, Jimeta, Yola, creating strong foundations for confident, capable young people.</p></div><div><h3>Our School</h3><a href="nursery.html">Nursery</a><a href="early-years.html">Early Years</a><a href="primary.html">Primary</a><a href="secondary.html">Secondary</a></div><div><h3>Admissions</h3><a href="admissions.html">Why Learning Roots</a><a href="admission-process.html">Admission Process</a><a href="requirements.html">Requirements</a><a href="fees.html">Fees</a><a href="scholarships.html">Scholarships</a><a href="careers.html">Careers</a></div><div><h3>Explore</h3><a href="about.html">About</a><a href="academics.html">Academics</a><a href="results.html">Results</a><a href="student-life.html">Student Life</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a href="portal.html">School Portal</a></div><div><h3>Follow</h3><div class="social"><a class="social-badge fb" aria-label="Facebook" href="https://www.facebook.com/profile.php?id=61594688583524" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 8.6h2.1V5.4c-.36-.05-1.6-.16-3.05-.16-3.02 0-5.09 1.9-5.09 5.4v2.83H6.1v3.6h3.26v9.13h3.62v-9.13h3.13l.5-3.6h-3.63v-2.47c0-1.04.28-1.75 1.76-1.75Z"/></svg></a><a class="social-badge ig" aria-label="Instagram" href="https://www.instagram.com/learningrootsroyalacademy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4a4.9 4.9 0 0 1 1.77 1.15 4.9 4.9 0 0 1 1.15 1.77c.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.16-.46-.35-1.26-.4-2.43C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43A4.9 4.9 0 0 1 3.82 3a4.9 4.9 0 0 1 1.77-1.15c.46-.16 1.26-.35 2.43-.4C9.29 1.39 9.67 1.38 12 1.38m0-2.2C8.7-.82 8.29-.8 7-.75c-1.3.06-2.19.27-2.97.57a7.1 7.1 0 0 0-2.57 1.67A7.1 7.1 0 0 0-.21 4.06c-.3.78-.51 1.67-.57 2.97C-.83 8.31-.85 8.7-.85 12s.02 3.69.07 4.97c.06 1.3.27 2.19.57 2.97a7.1 7.1 0 0 0 1.67 2.57 7.1 7.1 0 0 0 2.57 1.67c.78.3 1.67.51 2.97.57 1.29.06 1.7.07 5 .07s3.69-.01 4.97-.07c1.3-.06 2.19-.27 2.97-.57a7.1 7.1 0 0 0 2.57-1.67 7.1 7.1 0 0 0 1.67-2.57c.3-.78.51-1.67.57-2.97.06-1.28.07-1.69.07-4.97s-.01-3.69-.07-4.97c-.06-1.3-.27-2.19-.57-2.97a7.1 7.1 0 0 0-1.67-2.57A7.1 7.1 0 0 0 19.94-.4c-.78-.3-1.67-.51-2.97-.57C15.69-.98 15.3-1 12-1Zm0 6.3a5.7 5.7 0 1 0 0 11.4 5.7 5.7 0 0 0 0-11.4Zm0 9.4a3.7 3.7 0 1 1 0-7.4 3.7 3.7 0 0 1 0 7.4Zm7.26-9.62a1.33 1.33 0 1 1-2.66 0 1.33 1.33 0 0 1 2.66 0Z"/></svg></a><a class="social-badge yt" aria-label="YouTube" href="https://www.youtube.com/@LearningRootsRoyalAcademy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.02 3.02 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.02 3.02 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.02 3.02 0 0 0 2.122 2.136C4.495 20.455 12 20.455 12 20.455s7.505 0 9.377-.505a3.02 3.02 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814ZM9.545 15.568V8.432L15.818 12l-6.273 3.568Z"/></svg></a><a class="social-badge tiktok" aria-label="TikTok" href="https://www.tiktok.com/@learningrootsroyal" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.82c-1.02-.9-1.6-2.16-1.66-3.62h-3.02v13.28c0 1.5-1.22 2.72-2.72 2.72s-2.72-1.22-2.72-2.72 1.22-2.72 2.72-2.72c.24 0 .48.03.7.09V9.72a5.94 5.94 0 0 0-.7-.04c-3.2 0-5.8 2.6-5.8 5.8s2.6 5.8 5.8 5.8 5.8-2.6 5.8-5.8V9.02a8.9 8.9 0 0 0 4.9 1.48V7.5a5.6 5.6 0 0 1-3.3-1.68Z"/></svg></a><a class="social-badge li" aria-label="LinkedIn" href="https://www.linkedin.com/in/learning-roots-royal-academy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5H3.56v11.5h3.38V8.5ZM5.25 3.5a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92ZM20.45 20V13.9c0-3.26-1.74-4.78-4.06-4.78a3.5 3.5 0 0 0-3.18 1.75V8.5H9.83c.04.95 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.12-.93.28-.68.9-1.39 1.96-1.39 1.38 0 1.94 1.06 1.94 2.6V20h3.22Z"/></svg></a></div><p style="margin-top:16px">Plot Y.P30, Kofare, Jimeta, Yola, Adamawa State<br><a href="tel:+2348168673193">+234 816 867 3193</a><br><a href="mailto:contact@learningrootsroyalacademy.com">contact@learningrootsroyalacademy.com</a></p></div></div><div class="container bottom"><span>© 2026 Learning Roots Royal Academy.</span><span>Admissions open nationwide &amp; internationally</span></div></footer><div class="chat" id="chat"><div class="chat-head">Learning Roots FAQ</div><div class="chat-body"><button onclick="alert('Start on our Admissions page any time, or message us on WhatsApp — we reply fast!')">How do I enquire about admission?</button><button onclick="alert('The school is located in Kofare, Jimeta, Yola, Adamawa State.')">Where is the school?</button><button onclick="alert('Parents will receive secure portal credentials from the school.')">How does the parent portal work?</button></div></div><div class="float"><a class="wa" href="https://wa.me/2348168673193" target="_blank" aria-label="WhatsApp">✆</a><button class="faqbtn" onclick="document.getElementById('chat').classList.toggle('open')" aria-label="Frequently asked questions">?</button></div><script src="assets/site.js" defer></script><!-- Analytics (inactive until a Measurement ID is set). Add your GA4 ID below to activate. -->
+<script>
+window.LRRA_GA_ID = ""; /* e.g. "G-XXXXXXXXXX" */
+(function(){ if(!window.LRRA_GA_ID) return;
+  var s=document.createElement("script"); s.async=true;
+  s.src="https://www.googletagmanager.com/gtag/js?id="+window.LRRA_GA_ID; document.head.appendChild(s);
+  window.dataLayer=window.dataLayer||[]; function gtag(){dataLayer.push(arguments);}
+  window.gtag=gtag; gtag("js",new Date()); gtag("config", window.LRRA_GA_ID);
+})();
+</script>
+</body></html>
